@@ -30,7 +30,7 @@ public class C01_FindTheText {
 
     }
 
-    @Test
+
 
     public void Email1(){
 
@@ -43,7 +43,7 @@ public class C01_FindTheText {
 
     }
 
-    @Test
+
 
     public void CurrentAdress(){
 
@@ -53,7 +53,7 @@ public class C01_FindTheText {
         nameText.sendKeys("Ankara Kocatepe");
 
     }
-    @Test
+
     public void PermanentAdress(){
 
         driver.get("https://demoqa.com/text-box");
@@ -79,7 +79,6 @@ public class C01_FindTheText {
 
 
     @Test
-
     public void FindText(){
 
         driver.get("https://demoqa.com/text-box");
