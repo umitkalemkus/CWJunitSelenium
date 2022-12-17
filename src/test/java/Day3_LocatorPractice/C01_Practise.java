@@ -21,46 +21,36 @@ public class C01_Practise {
 //    Let's test the "Invalid email address" warning.
 
     WebDriver driver;
+
     @Before
-    public  void setUp(){
+    public void setup(){
         WebDriverManager.chromedriver().setup();
-        driver= new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().window().maximize();
-
-
-
-
-
-
-
     }
+
     @After
-    public  void tearDown(){
-       driver.quit();
-
-
-
+    public void tearDown(){
+        driver.quit();
     }
+
+
     @Test
-    public  void xpathPractice(){
+    public void xpathPractice(){
 
-      driver.get("https://www.linkedin.com/");
-
-
-
-      //2.adim -> email alanina @ sembolu bulunmayan bir mail adresi gir.
-
-        driver.findElement(By.xpath("//input[@input ='session_key']")).sendKeys("umitkalemkus.com"+ Keys.ENTER);
+        // 1. Adim -> LinkedIn sitesine git
+        driver.get("https://www.linkedin.com/");
 
 
-        //3. adim -> hata mesajinin goruntulendigini dorgula
+        //2. Adim -> email alanina @ sembolu bulunmayan bir mail adresi gir
+        driver.findElement(By.xpath("//input[@id='session_key']")).sendKeys("karlclarusway.com" + Keys.ENTER);
 
-        WebElement alertMessage =driver.findElement(By.xpath("//p[@class='alert-content']"));
-
+        //3. Adim -> Hata mesajinin goruntulendigini dogrula
+        WebElement alertMessage = driver.findElement(By.xpath("//p[@class='alert-content']"));
         Assert.assertTrue(alertMessage.isDisplayed());
-       // Assert.assertEquals(true,alertMessage.isDisplayed());
-       // Assert.assertFalse(!alertMessage.isDisplayed());
+        //Assert.assertEquals(true, alertMessage.isDisplayed());
+        //Assert.assertFalse(!alertMessage.isDisplayed());
 
 
     }
