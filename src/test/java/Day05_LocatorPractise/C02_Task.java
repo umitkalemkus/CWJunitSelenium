@@ -91,6 +91,7 @@ public class C02_Task {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 
