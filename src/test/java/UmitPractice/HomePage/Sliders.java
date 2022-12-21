@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v85.input.model.MouseButton;
+import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
@@ -53,6 +55,27 @@ public class Sliders {
 
         WebElement HomePage = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div/nav/a"));
         HomePage.click();
+         Actions actions = new Actions(driver);
+
+        WebElement Slider1 = driver.findElement(By.xpath("//div[@data-id='36']"));
+        WebElement Slider2 = driver.findElement(By.xpath("//div[@data-id='34']"));
+        WebElement Slider3 = driver.findElement(By.xpath("//div[@data-id='35']"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
