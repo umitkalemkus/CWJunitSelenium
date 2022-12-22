@@ -30,7 +30,7 @@ public abstract class BaseTest {
     public void tearDown(){
 
         // driver imiz kapatildi
-        driver.quit();
+      //  driver.quit();
 
     }
 
