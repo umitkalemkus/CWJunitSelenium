@@ -33,10 +33,18 @@ public class CookiesHomework extends BaseTest {
 
         //deleteCookieNamed,
 
+        System.out.println("deletedCookieNamed");
+        driver.manage().deleteCookie(cookies1);
+        Assert.assertNull("cookieshalen var" , driver.manage().getCookieNamed(cookies1.getName()));
+        System.out.println(driver.manage().getCookies().size());
 
 
 
-
+        //deleteAllCookies
+        System.out.println("deleteAllCookies");
+        driver.manage().deleteAllCookies();
+        allCookies =driver.manage().getCookies();
+        System.out.println("allCookies = " + allCookies.size());
 
 
 
