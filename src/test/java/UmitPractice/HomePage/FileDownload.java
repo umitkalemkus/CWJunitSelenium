@@ -17,6 +17,22 @@ public class FileDownload  extends BaseTest {
         Button.click();
         String Path = "C:/Users/umitkalemkus/Downloads";
         String fileName = "sampleFile";
+        boolean isDownlooded =isFileDownloaded(Path ,fileName);
+        System.out.println(isDownlooded);
+    }
+
+    public static boolean isFileDownloaded(String downloadPath , String fileName){
+
+        File file = new File(downloadPath);
+        File[] files = file.listFiles();
+
+        for (int i = 0; i < files.length ; i++) {
+            if (files[i].getName().equals(fileName))
+                return true;
+
+        }
+        return false;
+
 
     }
 
