@@ -10,7 +10,7 @@ import java.io.File;
 public class FileDownload  extends BaseTest {
 
     @Test
-    public void name() {
+    public void name() throws InterruptedException {
 
         driver.get("https://demoqa.com/upload-download");
         WebElement Button = driver.findElement(By.id("downloadButton"));
@@ -18,6 +18,7 @@ public class FileDownload  extends BaseTest {
         String Path = "C:/Users/umitkalemkus/Downloads";
         String fileName = "sampleFile";
         boolean isDownlooded =isFileDownloaded(Path ,fileName);
+        Thread.sleep(3000);
         System.out.println(isDownlooded);
     }
 
