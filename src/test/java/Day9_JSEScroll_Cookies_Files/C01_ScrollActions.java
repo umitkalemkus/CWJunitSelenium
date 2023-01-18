@@ -20,6 +20,7 @@ public class C01_ScrollActions extends BaseTest {
       act.sendKeys(Keys.PAGE_UP).perform();
       Thread.sleep(2000);
       act.sendKeys(Keys.PAGE_UP).perform();
+      System.out.println();
    }
    @Test
    public void scrollArrowUpDown() throws InterruptedException {

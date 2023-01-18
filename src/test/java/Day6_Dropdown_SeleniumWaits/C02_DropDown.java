@@ -31,6 +31,7 @@ public class C02_DropDown {
         driver.manage().window().maximize();
 
         //sayfanin yuklenmesi beklendi
+        driver.close();
 
     }
 
@@ -74,6 +75,7 @@ public class C02_DropDown {
 
         Select select = new Select(drpDown);
         select.selectByValue("TURKEY");
+        System.out.println();
 
 
     }

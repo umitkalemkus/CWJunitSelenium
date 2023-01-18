@@ -7,7 +7,7 @@ import utilities.BaseTest;
 
 
 
-    public class C03_WebTables extends BaseTest {
+    public class C03_WebTablesizlemengerekiyor extends BaseTest {
 
 
         @Test
@@ -23,7 +23,7 @@ import utilities.BaseTest;
 
             //3. satir sutun hucre locate edildi
 
-            WebElement row3cell3 = row3.findElement(By.xpath())
+
 
             System.out.println(row3.getText());
         }
