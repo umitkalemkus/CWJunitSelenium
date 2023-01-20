@@ -21,6 +21,7 @@ public class C01_ScrollActions extends BaseTest {
       Thread.sleep(2000);
       act.sendKeys(Keys.PAGE_UP).perform();
       System.out.println();
+      System.out.println();
    }
    @Test
    public void scrollArrowUpDown() throws InterruptedException {
