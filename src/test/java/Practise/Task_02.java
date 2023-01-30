@@ -59,5 +59,9 @@ public class Task_02 extends BaseTest {
         Assert.assertTrue(driver.findElement(By.xpath("//input[@value='2']")).isSelected());
         Assert.assertFalse(driver.findElement(By.xpath("//input[@value='1']")).isSelected());
         Assert.assertFalse(driver.findElement(By.xpath("//input[@value='-1']")).isSelected());
+
+
+
+
     }
 }
