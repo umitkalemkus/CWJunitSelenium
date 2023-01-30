@@ -30,6 +30,8 @@ public class C01_Practise {
         driver.manage().window().maximize();
     }
 
+
+
     @After
     public void tearDown(){
         driver.quit();
