@@ -41,6 +41,8 @@ public class C01_Practise {
 
 
     @Test
+
+
     public void xpathPractice(){
 
         // 1. Adim -> LinkedIn sitesine git
