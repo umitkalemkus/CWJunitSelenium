@@ -27,12 +27,14 @@ public class C01_Practise {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
         driver.manage().window().maximize();
     }
 
 
 
     @After
+
     public void tearDown(){
         driver.quit();
     }
