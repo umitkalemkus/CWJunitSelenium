@@ -60,6 +60,10 @@ public class C01_Practise {
         driver.findElement(By.xpath("//input[@id='session_key']")).sendKeys("karlclarusway.com" + Keys.ENTER);
 
         //3. Adim -> Hata mesajinin goruntulendigini dogrula
+
+
+
+
         WebElement alertMessage = driver.findElement(By.xpath("//p[@class='alert-content']"));
         Assert.assertTrue(alertMessage.isDisplayed());
         //Assert.assertEquals(true, alertMessage.isDisplayed());
