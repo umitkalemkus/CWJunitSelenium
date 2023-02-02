@@ -50,6 +50,9 @@ public class C01_Practise {
         // 1. Adim -> LinkedIn sitesine git
 
 
+
+
+
         driver.get("https://www.linkedin.com/");
 
 
