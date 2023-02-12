@@ -76,6 +76,9 @@ public class C01_Practise {
 
 
 
+
+
+
         Assert.assertTrue(alertMessage.isDisplayed());
         //Assert.assertEquals(true, alertMessage.isDisplayed());
         //Assert.assertFalse(!alertMessage.isDisplayed());
