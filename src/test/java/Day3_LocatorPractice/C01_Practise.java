@@ -73,6 +73,9 @@ public class C01_Practise {
         WebElement alertMessage = driver.findElement(By.xpath("//p[@class='alert-content']"));
 
 
+
+
+
         Assert.assertTrue(alertMessage.isDisplayed());
         //Assert.assertEquals(true, alertMessage.isDisplayed());
         //Assert.assertFalse(!alertMessage.isDisplayed());
