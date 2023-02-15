@@ -26,7 +26,7 @@ public class C03_RobotClass extends BaseTest {
         robot.keyRelease(KeyEvent.VK_S);
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
-
+        System.out.println("Control");
 
 
 
