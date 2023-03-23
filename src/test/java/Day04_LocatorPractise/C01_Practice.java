@@ -36,6 +36,13 @@ public class C01_Practice {
 
 
 
+
+
+
+
+
+
+
         // driver imiz maximize edildi
         driver.manage().window().maximize();
 
