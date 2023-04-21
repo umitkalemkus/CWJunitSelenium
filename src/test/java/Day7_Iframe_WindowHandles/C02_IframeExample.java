@@ -24,6 +24,12 @@ public class C02_IframeExample extends BaseTest {
 
 
 
+
+
+
+
+
+
     @Test
     public void iframeExample() {
         driver.get("https://www.jqueryscript.net/demo/Easy-iFrame-based-Twitter-Emoji-Picker-Plugin-jQuery-Emoojis/");
