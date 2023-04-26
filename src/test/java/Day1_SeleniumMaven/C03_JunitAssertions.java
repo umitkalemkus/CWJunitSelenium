@@ -17,6 +17,11 @@ public class C03_JunitAssertions {
 //    3- Test that the Amazon logo appears in the upper left corner
 //
 //
+
+
+
+
+
     WebDriver driver;
     @Before
     public void  before(){
