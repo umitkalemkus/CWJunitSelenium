@@ -10,6 +10,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class C03_JunitAssertions {
 
+
+
+
+
+
+
     //    Go to Amazon homepage.
 //    Do the following tasks by creating 3 different test methods.
 //    1- Test if the URL contains Amazon.
