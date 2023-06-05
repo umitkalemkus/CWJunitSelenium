@@ -16,6 +16,8 @@ public class C05_Actions extends BaseTest {
 
         WebElement accountsAndLists = driver.findElement(By.id("nav-link-accountList"));
 
+
+
         Actions actions = new Actions(driver);
 
         // Hesaplar ve listeler alaninin ustune gelip siparislerim linkine tikladik
