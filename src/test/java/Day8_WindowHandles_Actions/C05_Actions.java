@@ -14,6 +14,8 @@ public class C05_Actions extends BaseTest {
 
         driver.get("https://www.amazon.com.tr/");
 
+
+
         WebElement accountsAndLists = driver.findElement(By.id("nav-link-accountList"));
 
 
