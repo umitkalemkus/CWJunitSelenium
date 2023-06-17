@@ -38,7 +38,7 @@ public class C01_Locators {
     public void tearDown(){
 
         // driver imiz kapatildi
-        driver.quit();
+       // driver.quit();
     }
 
 
@@ -67,9 +67,8 @@ public class C01_Locators {
     @Test
     public void nameLocator(){
         // name locator -> "session_password"
-
+        driver.findElement(By.xpath("(//*[contains(text(), \"Reject\")])[2]")).click();
         WebElement password = driver.findElement(By.name("session_password"));
-
         password.sendKeys("Sifre");
     }
 
@@ -89,6 +88,7 @@ public class C01_Locators {
     @Test
     public void  tagNameLocator(){
 
+        driver.findElement(By.xpath("(//*[contains(text(), \"Reject\")])[2]")).click();
       List<WebElement> emaillist =driver.findElements(By.tagName("input"));
 
       //
@@ -101,7 +101,7 @@ public class C01_Locators {
     @Test
     public void linkname(){
         // Xpath locator -> //input[@name="session_key"]
-
+        // a tag ile baslayan eger bir yazi varsa yazyi alisrsin
         WebElement frgpassword =driver.findElement(By.linkText("Forgot password?"));
         frgpassword.click();
 
@@ -123,8 +123,8 @@ public class C01_Locators {
 
     @Test
     public void absolutePath(){
-        WebElement email =driver.findElement(By.xpath("/html/body/main/section[1]/div/div/form/div[2]/div[1]/input"));
-
+        driver.findElement(By.xpath("(//*[contains(text(), \"Reject\")])[2]")).click();
+        WebElement email =driver.findElement(By.xpath("/html/body/main/section[1]/div/div/form/div[1]/div[1]/div/div/input"));
         email.sendKeys("x path basarili sekilde calisitirildi");
 
 
