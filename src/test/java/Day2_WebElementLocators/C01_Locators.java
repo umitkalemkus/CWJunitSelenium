@@ -2,11 +2,10 @@ package Day2_WebElementLocators;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
@@ -39,7 +38,7 @@ public class C01_Locators {
     public void tearDown(){
 
         // driver imiz kapatildi
-        //driver.quit();
+        driver.quit();
     }
 
 
@@ -48,8 +47,20 @@ public class C01_Locators {
     public void idLocator(){
         // id Locator -> "session_key"
 
+        driver.findElement(By.xpath("(//*[contains(text(), \"Reject\")])[2]")).click();
         WebElement email = driver.findElement(By.id("session_key"));
-        email.sendKeys("Clarusway selenium dersinden selamlar");
+        email.sendKeys("umitkalemkus@gmail.com"+ Keys.TAB);
+        WebElement password = driver.findElement(By.name("session_password"));
+        password.sendKeys("Umit1umit");
+        WebElement signInButton = driver.findElement(By.xpath("(//*[contains(text(), \"Sign in\")])[2]"));
+        signInButton.click();
+        WebElement SearchButton = driver.findElement(By.id("global-nav-typeahead"));
+        String idtext = SearchButton.getAttribute("id");
+        Assert.assertEquals(idtext,"global-nav-typeahead");
+        Point point = SearchButton.getLocation();
+        System.out.println("X COORDINATE :"+ point.x + "Y COORDINATE :" + point.y);
+
+
 
     }
 
