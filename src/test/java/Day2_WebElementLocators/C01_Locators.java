@@ -155,6 +155,8 @@ public class C01_Locators {
     public void AndorXpath(){
         // Xpath locator -> //input[@name="session_key"]
 
+
+
         WebElement email =driver.findElement(By.xpath("//input[@class='input__input' and @autocomplete='username']"));
         email.sendKeys("X path and or  testi deneniyor");
 
