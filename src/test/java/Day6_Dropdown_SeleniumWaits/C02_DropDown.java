@@ -155,7 +155,8 @@ public class C02_DropDown {
 
           select.selectByValue("banana");
           select.selectByValue("elma");
-          List<WebElement> element  = select.getAllSelectedOptions();
+          List<WebElement> selectedOptions  = select.getAllSelectedOptions();
+          selectedOptions.forEach(t-> System.out.println("t.getText() = " + t.getText()));
 
 
 
