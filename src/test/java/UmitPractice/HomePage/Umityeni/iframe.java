@@ -58,6 +58,8 @@ public class iframe {
         //Assert.assertTrue(BoldText.getText().contains("content"));
     }
        @Test
+
+
         public void iframeExample() {
             driver.get("https://www.jqueryscript.net/demo/Easy-iFrame-based-Twitter-Emoji-Picker-Plugin-jQuery-Emoojis/");
             driver.switchTo().frame(1);
