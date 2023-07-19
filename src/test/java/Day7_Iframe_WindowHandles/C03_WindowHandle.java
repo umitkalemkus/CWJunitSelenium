@@ -31,7 +31,8 @@ public class C03_WindowHandle extends BaseTest {
         System.out.println(homePageId);
 
 
-        // Yeni sekmeler olusturmak adina target = _blank olan linklerden 2 tanesine tikliyoruz
+
+
         List<WebElement> links = driver.findElements(By.xpath("//a[@target='_blank']"));
 
 
