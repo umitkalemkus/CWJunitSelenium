@@ -18,6 +18,7 @@ public class C02_Actions extends BaseTest {
         Actions actions = new Actions(driver);
         actions.doubleClick(doubleClickBtn).perform();
         Assert.assertTrue(driver.findElement(By.id("doubleClickBtn")).isDisplayed());
+        System.out.println("doubleClickBtn = " + doubleClickBtn.getText());
 
 
 
@@ -31,11 +32,6 @@ public class C02_Actions extends BaseTest {
 
         WebElement rightClickmessage = driver.findElement(By.id("rightClickBtn"));
         Assert.assertTrue(rightClickmessage.isDisplayed());
-
-
-
-
-
 
     }
     @Test

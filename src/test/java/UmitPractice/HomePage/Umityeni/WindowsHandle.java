@@ -18,56 +18,91 @@ public class WindowsHandle extends BaseTest {
     }
 
     @Test
-    public void windowHandle () {
+    public void windowHandle() {
 
-         driver.get("https://testproject.io/");
-         driver.switchTo().newWindow(WindowType.TAB);
-         driver.get("https://blog.testproject.io/");
-     }
-      @Test
-     public void windowHandle2 (){
-         driver.get("https://www.toolsqa.com/selenium-webdriver/window-handle-in-selenium/");
+        driver.get("https://testproject.io/");
+        driver.switchTo().newWindow(WindowType.TAB);
+        driver.get("https://blog.testproject.io/");
+    }
 
-         // Yeni sekmeler olusturmak adina target = _blank olan linklerden 2 tanesine tikliyoruz
-         String homePageId = driver.getWindowHandle();
-          System.out.println("homePageId = " + homePageId);
+    @Test
+    public void windowHandle3() {
 
-          List<WebElement> links = driver.findElements(By.xpath("//a[@target='_blank']"));
-         //links.forEach(WebElement ::click);
-          links.get(0).click();
-          links.get(1).click();
-
-          Set<String> windows  = driver.getWindowHandles();
-
-          Iterator<String> iterator = windows.iterator();
-          while(iterator.hasNext()){
-              driver.switchTo().window(iterator.next());
-              if (driver.getWindowHandle().equals(homePageId)){
-                  continue;
-              }
-              driver.close();
-
-          }
+        driver.get("https://testproject.io/");
+        driver.switchTo().newWindow(WindowType.WINDOW);
+        driver.get("https://blog.testproject.io/");
+    }
 
 
+    @Test
+    public void windowHandle2() {
+        driver.get("https://www.toolsqa.com/selenium-webdriver/window-handle-in-selenium/");
 
-         //a[@target='_blank']
+        // Yeni sekmeler olusturmak adina target = _blank olan linklerden 2 tanesine tikliyoruz
+        String homePageId = driver.getWindowHandle();
+        System.out.println("homePageId = " + homePageId);
+
+        List<WebElement> links = driver.findElements(By.xpath("//a[@target='_blank']"));
+        //links.forEach(WebElement ::click);
+        links.get(0).click();
+        links.get(1).click();
+
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            driver.switchTo().window(iterator.next());
+            if (driver.getWindowHandle().equals(homePageId)) {
+                continue;
+            }
+            driver.close();
+        }
+
+    }
+
+
+    @Test
+    public void windowHandle5() {
+       //
+        driver.get("https://www.amazon.com/");
+        String homePageHandle = driver.getWindowHandle();
+
+        driver.switchTo().newWindow(WindowType.TAB);
+
+        driver.get("https://www.alibaba.com/");
+
+        driver.switchTo().newWindow(WindowType.WINDOW);
+
+        driver.get("https://www.google.com/");
+
+        Set<String> handles = driver.getWindowHandles();
+        Iterator<String>   i = handles.iterator();
+
+        while (i.hasNext()){
+            String currentTab = i.next();
+            driver.switchTo().window(currentTab);
+              // 1. yol
+            System.out.println(driver.getTitle());
+            if(!driver.getWindowHandle().equals(homePageHandle)){
+                driver.close();
+
+             // 2. yol
+             if(!driver.getTitle().contains("Spend")){
+                 driver.close();
+
+             }
 
 
 
-     }
+
+            }        }
 
 
 
 
-        // https://testproject.io/
-
-// https://blog.testproject.io/
-
-
-
-
+    }
 
 
 
 }
+
