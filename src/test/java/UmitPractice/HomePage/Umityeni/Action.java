@@ -65,13 +65,13 @@ public class Action extends BaseTest {
 
 
         Actions actions = new Actions(driver);
-        actions.dragAndDrop(Washington,US).perform();
-        actions.dragAndDrop(Copenhagen,Dermark).perform();
-        actions.dragAndDrop(Seoul,SouthKorea).perform();
-        actions.dragAndDrop(Rome,Italy).perform();
-        actions.dragAndDrop(Madrid,Spain).perform();
-        actions.dragAndDrop(Oslo,Norway).perform();
-        actions.dragAndDrop(Stockholm,Sweden).perform();
+        actions.dragAndDrop(Washington, US).perform();
+        actions.dragAndDrop(Copenhagen, Dermark).perform();
+        actions.dragAndDrop(Seoul, SouthKorea).perform();
+        actions.dragAndDrop(Rome, Italy).perform();
+        actions.dragAndDrop(Madrid, Spain).perform();
+        actions.dragAndDrop(Oslo, Norway).perform();
+        actions.dragAndDrop(Stockholm, Sweden).perform();
 
     }
 
@@ -82,17 +82,41 @@ public class Action extends BaseTest {
         driver.get("https://rangeslider.js.org/");
         WebElement Slider = driver.findElement(By.xpath("(//div[@class='rangeslider__handle'])[1]"));
         Actions actions = new Actions(driver);
-        actions.dragAndDropBy(Slider,100,0).perform();
+        actions.dragAndDropBy(Slider, 100, 0).perform();
 
 
     }
 
     @Test
-    public
+    public void hoverOver() {
 
+        driver.get("https://www.amazon.com.tr/");
+        WebElement accountsAndLists = driver.findElement(By.id("nav-link-accountList"));
 
+        Actions actions = new Actions(driver);
+        actions.moveToElement(accountsAndLists).click(driver.findElement(By.id("nav_prefetch_yourorders"))).perform();
 
-
+        Assert.assertEquals("Amazon Giriş Yap", driver.getTitle());
 
 
     }
+
+    @Test
+    public void keyboardActions() {
+
+        driver.get("https://demoqa.com/auto-complete");
+
+        WebElement input = driver.findElement(By.id("autoCompleteSingleInput"));
+
+        // You are Exceptional
+
+        Actions actions = new Actions(driver);
+
+        actions.click(input).keyDown(Keys.SHIFT).sendKeys("y").keyUp(Keys.SHIFT).sendKeys("ou are").
+                keyDown(Keys.SHIFT).sendKeys("e").keyUp(Keys.SHIFT).sendKeys("xceptional").perform();
+
+
+    }
+
+
+}
