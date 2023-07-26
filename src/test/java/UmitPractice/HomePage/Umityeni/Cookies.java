@@ -40,10 +40,44 @@ public class Cookies extends BaseTest {
             System.out.println("w.getValue() = " + w.getValue());
             
         }
+    }
+    // Add Cookie.
+     @Test
+    public void addCookie() {
+        System.out.println("add cookie");
+        driver.get("https://kitchen.applitools.com/ingredients/cookie");
+        Cookie cookie1 = new Cookie("fruit","apple");
+        driver.manage().addCookie(cookie1);
+        System.out.println("cookie1 = " + cookie1);
+        Assert.assertEquals(cookie1.getValue(),driver.manage().getCookieNamed(cookie1.getName()).getValue());
+        Set<Cookie> allcookies = driver.manage().getCookies();
+        System.out.println("allcookies = " + allcookies);
+         System.out.println("allcookies.size() = " + allcookies.size());
+         System.out.println("Edit cookie  ");
 
+         Cookie edited = new Cookie(cookie1.getName(), "ananas");
+         System.out.println("edited = " + edited);
+         driver.manage().addCookie(edited);
+         System.out.println("driver.manage().getCookieNamed(cookie1.getName()).getValue() = " + driver.manage().getCookieNamed(cookie1.getName()).getValue());
 
+    }
 
+    @Test
+    public void deleteCookies() {
 
+        driver.get("https://kitchen.applitools.com/ingredients/cookie");
+        Set<Cookie> Allcookies = driver.manage().getCookies();
+        for (Cookie w : Allcookies) {
+            System.out.println("w.getValue() = " + w.getValue());
+
+        }
+        Cookie newcookie = new Cookie("drinks","fanta");
+        driver.manage().addCookie(newcookie);
+        System.out.println(driver.manage().getCookies());
+        System.out.println(driver.manage().getCookies().size());
+        System.out.println("delete cookies");
+        driver.manage().deleteCookie(newcookie);
+        System.out.println(driver.manage().getCookies().size());
 
 
     }
