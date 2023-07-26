@@ -30,6 +30,8 @@ public class Cookies extends BaseTest {
         Assert.assertEquals("chicken",cookie.getValue());
         //find all cookies
         Set<Cookie> cookies = driver.manage().getCookies();
+        int numberOfCookies = cookies.size();
+        System.out.println("numberOfCookies = " + numberOfCookies);
         System.out.println("cookies = " + cookies);
 
         for (Cookie w :cookies) {
@@ -38,6 +40,10 @@ public class Cookies extends BaseTest {
             System.out.println("w.getValue() = " + w.getValue());
             
         }
+
+
+
+
 
 
     }
