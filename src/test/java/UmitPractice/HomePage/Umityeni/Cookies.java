@@ -78,7 +78,10 @@ public class Cookies extends BaseTest {
         System.out.println("delete cookies");
         driver.manage().deleteCookie(newcookie);
         System.out.println(driver.manage().getCookies().size());
-
+        Assert.assertNull(driver.manage().getCookieNamed(newcookie.getName()));
+        driver.manage().deleteAllCookies();
+       Allcookies = driver.manage().getCookies();
+        System.out.println(Allcookies.size());
 
     }
 }
