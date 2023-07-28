@@ -12,7 +12,7 @@ public class dosyayukleme {
         System.out.println(System.getProperty("user.dir")); // projemizin rootu // C:\Users\umitkalemkus\IdeaProjects\CWJunitSelenium
 
         String projectRoot = System.getProperty("user.dir"); // sistemin icerisinden geliyor
-        String filePath = "\\src\\test\\java\\resources\\fileExist.jpg"; // ters slash yapmak gerekiyor.
+        String filePath = "\\ src \\ test \\ java \\ resources \\ fileExist.jpg"; // ters slash yapmak gerekiyor.
 
         filePath = projectRoot +  filePath;
 
