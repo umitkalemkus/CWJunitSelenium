@@ -19,3 +19,35 @@
 2023-07-16 00:11:14 INFO  C02_Log4jDemo:16 - Info
 2023-07-16 00:11:14 WARN  C02_Log4jDemo:17 - Error
 2023-07-16 00:11:14 FATAL C02_Log4jDemo:18 - Fatal
+2023-08-20 18:13:04 TRACE C02_Log4jDemo:14 - Trace
+2023-08-20 18:13:04 DEBUG C02_Log4jDemo:15 - Debug
+2023-08-20 18:13:04 INFO  C02_Log4jDemo:16 - Info
+2023-08-20 18:13:04 WARN  C02_Log4jDemo:17 - Error
+2023-08-20 18:13:04 FATAL C02_Log4jDemo:18 - Fatal
+2023-08-20 18:38:21 TRACE C02_Log4jDemo:14 - Trace
+2023-08-20 18:38:21 DEBUG C02_Log4jDemo:15 - Debug
+2023-08-20 18:38:21 INFO  C02_Log4jDemo:16 - Info
+2023-08-20 18:38:21 WARN  C02_Log4jDemo:17 - Error
+2023-08-20 18:38:21 FATAL C02_Log4jDemo:18 - Fatal
+2023-08-20 18:42:57 ERROR Log4jDemo:16 - Error message
+2023-08-20 18:42:57 DEBUG Log4jDemo:17 - Debug message
+2023-08-20 18:42:57 INFO  Log4jDemo:18 - Info message
+2023-08-20 18:42:57 ERROR Log4jDemo:19 - Error message
+2023-08-20 18:42:57 FATAL Log4jDemo:20 - Fatal message
+2023-08-20 18:42:57 TRACE Log4jDemo:21 - Trace message
+2023-08-20 18:52:25 WARN  Log4jDemo:16 - Error message
+2023-08-20 18:52:25 DEBUG Log4jDemo:17 - Debug message
+2023-08-20 18:52:25 INFO  Log4jDemo:18 - Info message
+2023-08-20 18:52:25 ERROR Log4jDemo:19 - Error message
+2023-08-20 18:52:25 FATAL Log4jDemo:20 - Fatal message
+2023-08-20 18:52:25 TRACE Log4jDemo:21 - Trace message
+2023-08-20 22:00:27 WARN  Log4jDemo:16 - Error message
+2023-08-20 22:00:27 DEBUG Log4jDemo:17 - Debug message
+2023-08-20 22:00:27 INFO  Log4jDemo:18 - Info message
+2023-08-20 22:00:27 ERROR Log4jDemo:19 - Error message
+2023-08-20 22:00:27 FATAL Log4jDemo:20 - Fatal message
+2023-08-20 22:00:27 TRACE Log4jDemo:21 - Trace message
+2023-08-20 22:11:58 WARN  Log4jDemo:16 - Error message
+2023-08-20 22:11:58 INFO  Log4jDemo:18 - Info message
+2023-08-20 22:11:58 ERROR Log4jDemo:19 - Error message
+2023-08-20 22:11:58 FATAL Log4jDemo:20 - Fatal message
