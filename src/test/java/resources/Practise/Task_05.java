@@ -1,4 +1,4 @@
-package Practise;
+package resources.Practise;
 
 import org.junit.Test;
 import utilities.BaseTest;

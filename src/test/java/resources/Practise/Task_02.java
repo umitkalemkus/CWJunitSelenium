@@ -1,4 +1,4 @@
-package Practise;
+package resources.Practise;
 
 import com.github.javafaker.Faker;
 import org.junit.Assert;

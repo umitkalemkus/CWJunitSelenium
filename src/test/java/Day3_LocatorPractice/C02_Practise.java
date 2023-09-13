@@ -10,6 +10,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
@@ -26,7 +27,8 @@ public class C02_Practise {
     @BeforeClass
     public static void createDriver(){
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+       // driver = new ChromeDriver();
+        driver= new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
