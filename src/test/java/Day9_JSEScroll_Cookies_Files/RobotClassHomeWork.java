@@ -21,7 +21,9 @@ public class RobotClassHomeWork extends BaseTest {
         WebElement search = driver.findElement(By.name("s"));
         search.click();
 
-        Robot robot = new Robot();
+
+
+        Robot robot = new Robot();;
         robot.keyPress(KeyEvent.VK_J);
         robot.keyRelease(KeyEvent.VK_J);
         robot.keyPress(KeyEvent.VK_S);
