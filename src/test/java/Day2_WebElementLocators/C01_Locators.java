@@ -146,6 +146,8 @@ public class C01_Locators {
     public void multipleAttributeXpath(){
         // Xpath locator -> //input[@name="session_key"]
 
+
+
         WebElement email =driver.findElement(By.xpath("//input[@class='input__input'][@name='session_key']"));
         email.sendKeys("X path multiple testi deneniyor");
 
