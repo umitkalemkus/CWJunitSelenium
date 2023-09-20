@@ -162,6 +162,8 @@ public class C01_Locators {
         WebElement email =driver.findElement(By.xpath("//input[@class='input__input' and @autocomplete='username']"));
         email.sendKeys("X path and or  testi deneniyor");
 
+
+
     }
 
 
