@@ -24,6 +24,7 @@ public class C02_DropDown {
 
         //Driver olusturuldu
         WebDriverManager.chromedriver().setup();
+
         driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
