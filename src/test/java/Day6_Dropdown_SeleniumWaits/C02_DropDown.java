@@ -23,6 +23,7 @@ public class C02_DropDown {
     public void setup() {
 
         //Driver olusturuldu
+
         WebDriverManager.chromedriver().setup();
 
         driver = new ChromeDriver();
