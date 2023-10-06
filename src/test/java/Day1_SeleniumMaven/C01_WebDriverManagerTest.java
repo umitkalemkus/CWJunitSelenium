@@ -17,6 +17,8 @@ public class C01_WebDriverManagerTest {
 // Verify that you are Google in the title.
 
 
+
+
     public static void main(String[] args) {
 
          /// Webdriver Manager clasini kullanarak chromedriver binary lerimizi indirdik.
