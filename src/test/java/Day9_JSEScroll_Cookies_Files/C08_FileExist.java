@@ -20,6 +20,8 @@ public class C08_FileExist {
 
         String fullPath = homePath + filePath;     // home ve dosya yollarini birlestirip full pathi elde ettik.
 
+
+
         File image = new File(fullPath);        // Path imizi file a cevirdik.
 
         Assert.assertTrue(image.exists());    // exist metoduyla varolup olmadigini kontrol ettik.
