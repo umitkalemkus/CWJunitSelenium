@@ -13,6 +13,9 @@ public class C08_FileExist {
     @Test
     public void fileExist() {
         //C:\\Users\\umitkalemkus\\Desktop\\fileExist.png
+
+
+
         System.out.println(System.getProperty("user.home"));  // Home yolunu yazdirdik
         String  homePath =System.getProperty("user.home");   // Home yolunu atadik
 
