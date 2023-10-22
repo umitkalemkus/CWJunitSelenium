@@ -32,6 +32,7 @@ public class C02_DropDown {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 
+
         // driver imiz maximize edildi
         driver.manage().window().maximize();
 
