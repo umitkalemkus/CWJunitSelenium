@@ -19,7 +19,8 @@ public class C01_ExcelMethod {
           //Dosyasimi actik
           FileInputStream fis = new FileInputStream(path);
 
-         //Actigimiz dosyayi excel workbook una cevirdik
+
+          //Actigimiz dosyayi excel workbook una cevirdik
            Workbook workbook = WorkbookFactory.create(fis);
 
            // Workbookuzdan sheetimize gecis yaptik
