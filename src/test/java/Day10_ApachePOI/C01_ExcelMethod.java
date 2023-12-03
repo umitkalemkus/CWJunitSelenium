@@ -16,6 +16,8 @@ public class C01_ExcelMethod {
 
 
 
+
+
           String path ="src\\test\\java\\resources\\excelfile.xlsx";
           //Dosyasimi actik
           FileInputStream fis = new FileInputStream(path);
