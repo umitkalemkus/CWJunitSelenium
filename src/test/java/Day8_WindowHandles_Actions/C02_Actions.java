@@ -21,7 +21,6 @@ public class C02_Actions extends BaseTest {
         System.out.println("doubleClickBtn = " + doubleClickBtn.getText());
 
 
-
     }
     @Test
     public void rightClick(){
