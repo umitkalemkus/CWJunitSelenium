@@ -41,7 +41,6 @@ public class C2_ScrolWithJSExecutor extends BaseTest {
         Actions act = new Actions(driver);
         act.doubleClick(blueBox).perform();
         System.out.println("colour after :" + blueBox.getCssValue("background-color"));
-
-
+        
     }
 }
