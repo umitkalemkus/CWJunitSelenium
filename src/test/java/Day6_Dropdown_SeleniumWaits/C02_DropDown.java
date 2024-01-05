@@ -98,7 +98,9 @@ public class C02_DropDown {
         //Dropdown locate edildi
         Select select = new Select(drpDown);
         select.selectByVisibleText("NEPAL");
+
         System.out.println(select.isMultiple());
+
 
 
     }
