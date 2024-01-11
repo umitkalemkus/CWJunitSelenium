@@ -12,10 +12,10 @@ import java.util.Set;
 
 public class WindowsHandle extends BaseTest {
 
-    @Override
+  /*  @Override
     public void tearDown() {
 
-    }
+    }*/
 
     @Test
     public void windowHandle() {
